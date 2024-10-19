@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "pages/api/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "playlists/playlist.m3u",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/getPlaylist",
+      "dest": "/pages/api/getPlaylist.js"
+    },
+    {
+      "src": "/playlists/playlist.m3u",
+      "dest": "/playlists/playlist.m3u"
+    }
+  ]
+}
