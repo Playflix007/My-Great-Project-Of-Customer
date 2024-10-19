@@ -1,0 +1,12 @@
+[
+  {
+    "username": "customer1",
+    "token": "token123",
+    "blocked": false
+  },
+  {
+    "username": "customer2",
+    "token": "token456",
+    "blocked": true
+  }
+]
