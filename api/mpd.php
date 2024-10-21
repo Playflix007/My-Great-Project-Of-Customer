@@ -3,7 +3,7 @@
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 
 // URL to the .mpd file
-$url = "https://m3u.yuvraj49.xyz/tp/Kx34x1N8ETqu/manifest/$id.mpd|User-Agent=Safari/537.36";
+$url = "https://m3u.yuvraj49.xyz/tp/Kx34x1N8ETqu/manifest/$id.mpd";
 
 // Create a context with the required headers (User-Agent)
 $options = [
