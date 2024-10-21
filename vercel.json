@@ -1,0 +1,59 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [ 
+    {
+      "src": "/",
+      "dest": "/api/welcome.php",
+      "headers": {
+        "Cache-Control": "max-age=84000, public"
+      }
+    },
+    {
+      "src": "/playme.m3u",
+      "dest": "/playlist/play.m3u",
+      "headers": {
+        "Cache-Control": "max-age=84000, public"
+      }
+    },  
+    {
+      "src": "/playkodime.m3u",
+      "dest": "/playlist/playkodi.m3u",
+      "headers": {
+        "Cache-Control": "max-age=84000, public"
+      }
+    },
+    {
+      "src": "/mpd",
+      "dest": "/api/mpd.php",
+      "headers": {
+        "Cache-Control": "max-age=84000, public"
+      }
+    },
+    {
+      "src": "/key",
+      "dest": "/api/key.php",
+      "headers": {
+        "Cache-Control": "max-age=84000, public"
+      }
+    },
+    {
+      "src": "/playlist.m3u",
+      "dest": "/api/playlist.php",
+      "headers": {
+        "Cache-Control": "max-age=84000, public"
+      }
+    },
+    {
+      "src": "/kodi.m3u",
+      "dest": "/api/kodi.php",
+      "headers": {
+        "Cache-Control": "max-age=84000, public"
+      }
+    }
+  ],
+  "regions": ["bom1"]
+}
